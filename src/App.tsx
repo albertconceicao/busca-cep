@@ -21,7 +21,7 @@ function App() {
   async function handleSearch (){
     //42739005/json
     if(input === ''){
-      alert('Preencha algum CEP')
+      alert('Preencha algum CEP');
       return;
     }
     try {
@@ -57,7 +57,7 @@ function App() {
       <main className='main'>
         <h2>CEP: {cep.cep}</h2>
 
-        <span>CEP: {cep.logradouro}</span>
+        <span>{cep.logradouro}</span>
         <span>Complemento: {cep.complemento}</span>
         <span>Bairro: {cep.bairro}</span>
         <span>Cidade: {cep.localidade} - {cep.uf}</span>
